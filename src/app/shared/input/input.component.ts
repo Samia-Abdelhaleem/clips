@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-input',
@@ -8,7 +8,7 @@ import { FormControl } from '@angular/forms';
 })
 export class InputComponent implements OnInit {
   // binding form control
-  @Input() control: FormControl = new FormControl();
+  @Input() control: UntypedFormControl = new UntypedFormControl();
 
   // i will use the same input validation for text & email so i must differentiate between them
   @Input() type = 'text';
