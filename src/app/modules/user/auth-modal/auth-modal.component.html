@@ -1,0 +1,22 @@
+<app-modal modalID="auth">
+  <p class="text-2xl font-bold" heading>Your Account</p>
+
+  <app-tabs-container>
+    <!-- we will separate the forms into different component to focus on each one separately  -->
+    <!--
+      1) login form
+      2) register form
+   -->
+    <app-tab tabTitle="login">
+      <!-- Login Form -->
+      <app-login></app-login>
+    </app-tab>
+
+    <app-tab tabTitle="register">
+      <!-- Registration Form -->
+      <app-register></app-register>
+    </app-tab>
+  </app-tabs-container>
+</app-modal>
+
+<!-- <app-modal></app-modal> -->
